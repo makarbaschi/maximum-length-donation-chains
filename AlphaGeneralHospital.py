@@ -1,18 +1,7 @@
-print('')
-print('-'*5, 'Test', '-'*5)
-print('')
-print('')
-
-print('input number of patients:')
-
-
 N = int(input())
 Alpha_Hospital = {}
 for i in range (1,N+1) :
     Alpha_Hospital[i] = []
-
-print('')
-print('input blood groups:')
 
 for i in range (1,N+1):
     patient_data = input().split()
@@ -159,14 +148,9 @@ def Show(L):
     return txt
 
 print('')
-print('')
 print('-'*15)
-print('length of longest chain:')
 print(Max_Length)
 print('')
-print('')
 print('-'*15)
-print('longest chains:')
-print('')
 for chain in All_Max_Chains:
     print(Show(chain))
